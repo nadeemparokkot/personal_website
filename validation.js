@@ -1,0 +1,30 @@
+$(document).ready(function(){
+    $(".contact-form").validate({
+        rules:{
+            name:{
+                required:true,
+                minlength:4 
+            },
+            place:{
+                required:true,
+                minlength:4
+            },
+            email:{
+                required:true,
+                email:true
+            },
+            Phone:{
+                required:true,
+            },
+            message:{
+                required:true
+            }
+
+        },
+        message:{
+            name:{
+                required:"Enter Your Full Name"
+            }
+        }
+    })
+})
